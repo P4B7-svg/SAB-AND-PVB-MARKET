@@ -1,0 +1,97 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: black;
+color: white;
+overflow-x: hidden;
+position: relative;
+}
+
+.header {
+text-align: center;
+padding: 30px;
+font-size: 50px;
+font-weight: bold;
+color: white;
+text-shadow: 2px 2px green;
+}
+
+.nav {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.nav a {
+padding: 10px 15px;
+background: green;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.nav a:hover {
+background: darkgreen;
+}
+
+.product {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+.item {
+background: rgba(255,255,255,0.1);
+border: 2px solid white;
+border-radius: 10px;
+padding: 15px;
+width: 200px;
+text-align: center;
+}
+
+.item img {
+width: 100%;
+border-radius: 10px;
+}
+
+.price {
+font-size: 24px;
+margin: 10px 0;
+}
+
+.stock {
+margin-bottom: 10px;
+}
+
+.buy-btn {
+padding: 10px 20px;
+background: green;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+}
+
+.footer {
+text-align: center;
+padding: 20px;
+margin-top: 50px;
+background: rgba(0,0,0,0.8);
+font-size: 14px;
+}
+
+.money {
+position: absolute;
+top: -50px;
+font-size: 20px;
+color: gold;
+animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+0% { top: -50px; transform: rotate(0deg); }
+100% { top: 100vh; transform: rotate(360deg); }
+}
